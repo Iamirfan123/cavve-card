@@ -26,7 +26,7 @@ section{
     background: rgb(1, 2, 41);  
     position: absolute; 
     justify-content: center;
-display: flex"
+display: flex;
 }
 .product-info1{
     max-width: 400px;
@@ -48,6 +48,7 @@ display: flex"
     margin: auto;
     
 }
+
 section1{
     position: relative;
     width: 100%;
@@ -102,27 +103,78 @@ section1{
     
     
 }
-.small-img-group{
-    
+.carousel{
+    height: 100px;
     top: 10px;
     position:relative;
     max-width: 100%;
     display: flex;
     justify-content: center;
-    margin: auto;
+    margin:2rem auto;
     background-size: 50px;
-    width: 500px;
+    width: 1000px;
     border-radius: 50px;
     ;
+    overflow: hidden;
+    align-items: center;
+    
     
 }
-.small-img-col img{
+button{
+    border-radius: 100%;
+    border: 0;
+    background: none;
+    color: black;
+    cursor: pointer;
+    transition: 0.25s;
+    height: 50px;
+    font-size: 50px;
+
+}
+button:hover{
+    background: none;
+    color: red;
+}
+button.carousel__button{
+    position: relative;
+    right: 0;
+    font-size: 50px;
+    width: 50px;
+   margin: auto;
+   z-index: 1;
+}
+button.carousel__button{
+    position: relative;
+    right: 0;
+    padding-right: -20px;
     margin: auto;
+}
+.carousel__images{
+    
+    margin-top: 2px;
     width: 100px;
-    letter-spacing: 100px;
-    padding: 10px;
+    display: flex;
+    transform: translateX(0px);
+    transition: transform 0.25s;
+    align-items: center;
+   
+    position: absolute;
     
 }
+.carousel__images img{
+   
+    width: 100%;
+   position: relative;
+  
+    display: flex;
+   
+   
+   
+    align-items: center;
+    
+    
+}
+
 
 .product-info2 a{
     position: relative;
@@ -175,43 +227,51 @@ hr{
     margin: auto;
 }
 @media screen and (max-width:1400px) {
+    body{
+        overflow-x: hidden;
+    }
     section{
         height: 300vh;
         background: white;
         position: relative;
         margin: 0;
-        z-index: 2;
-        align-items: center;
-        overflow-x: hidden;
+        padding: 0;
+        overflow: hidden;
         width: 100%;
         display: flex;
     }
     .product-box{
         flex-direction: column-reverse;
-        margin: 200px;
-       padding: 200px;
-       height: 100vh;
-       z-index: 2;
+        margin: 500px;
+       padding: 500px;
+       
+       height: 300vh;
+     
         width: 100%;
         position: relative;
        background: white;
       align-items: center;
      display: inline-flex;
        overflow: hidden;
+
+
        
        
          
     }
     .product-info1{
+        z-index: 5;
         display: flex;
-        max-height: 200%;
+        max-height: 50%;
+        height: 500px;
         flex-direction: column;       
         margin: 0;
-        padding: 0;
         background: white;
         top: 0;
-        left: 0;
-        padding-bottom: 225px;
+        flex-basis: 100%;
+       
+        top: 0;
+        
        
         
     
@@ -224,12 +284,13 @@ hr{
         z-index: 2;
         flex-direction: column; 
         margin: 0; 
-        padding-top: 200px;     
+        padding-top: -100px;     
         margin-top: 10px;
         background: white;
         padding-bottom: 50px;
         flex-basis: 100%;
-        margin-bottom: 0;
+        height: 500px;
+       
         
         
     }
@@ -249,6 +310,8 @@ hr{
        background: none;
        align-items: center;
        overflow: hidden;
+       background: red;
+       overflow-x: hidden;
        
          
     }
