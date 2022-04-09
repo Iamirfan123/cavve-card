@@ -264,6 +264,9 @@ hr{
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
+.slideshow-container a:hover{
+    background: red;
+}
 
 /* Position the "next button" to the right */
 .slideshow-container a.next {
