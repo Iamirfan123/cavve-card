@@ -91,7 +91,7 @@ section1{
 }
 .product-info2 img{
     
-    top: 50px;
+    top: 10px;
     position:relative;
     max-width: 100%;
     display: flex;
@@ -239,6 +239,8 @@ hr{
   max-width: 300px;
   position: relative;
   margin: auto;
+  align-items: center;
+  top: 40px;
 }
 
 /* Hide the images by default */
@@ -307,7 +309,8 @@ hr{
   width: 15px;
   margin: 0 2px;
   position: relative;
-  top: 40px;
+  top: 50px;
+  
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
