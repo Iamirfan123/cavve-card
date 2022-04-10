@@ -27,6 +27,7 @@ section{
     position: absolute; 
     justify-content: center;
 display: flex;
+align-items: center;
 }
 .product-info1{
     max-width: 400px;
@@ -90,7 +91,7 @@ section1{
 }
 .product-info2 img{
     
-    top: 10px;
+    top: 50px;
     position:relative;
     max-width: 100%;
     display: flex;
@@ -305,6 +306,8 @@ hr{
   height: 15px;
   width: 15px;
   margin: 0 2px;
+  position: relative;
+  top: 40px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -312,7 +315,7 @@ hr{
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: white;
 }
 
 /* Fading animation */
